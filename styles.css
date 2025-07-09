@@ -3,15 +3,17 @@
     box-sizing: border-box;
 }
 
-html, body {
+/* html, body {
     margin: 0;
-    padding: 1rem;
-}
+    padding: 0.5rem;
+} */
 
 body {
     font-family: "Manrope", Helvetica, sans-serif;
     background-color: #F9F5E1;
     line-height: 1.5;
+    margin: 0;
+    padding: 1rem;
 }
 
 h1, h2 {
@@ -116,7 +118,7 @@ ul li a:hover {
     max-width: 100%;
     margin: 0;
     overflow: hidden;
-    height: 25rem;
+    padding: 9rem;
     opacity: 0.9;
     background-size: cover;
     background-position: center;
@@ -130,10 +132,11 @@ ul li a:hover {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 2.5rem;
+    font-size: 2.40rem;
     color: #F9F5E1;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.75);
     font-family: "Manrope", Helvetica, sans-serif;
+    text-align: center;
 }
 
 .cafe-info {
@@ -239,6 +242,10 @@ ul li a:hover {
         width: 100%;
     }
 
+    .bg-text {
+        font-size: 2rem;
+    }
+
     .cafe-info {
         grid-template-columns: 1fr;
     }
@@ -263,6 +270,10 @@ ul li a:hover {
         padding: 0.5rem 0;
         font-size: 1rem;
         cursor: pointer;
+    }
+
+    .letter-space {
+        font-size: 1.5rem;
     }
 
     /* Dropdown hidden by default */
