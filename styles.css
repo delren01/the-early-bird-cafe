@@ -27,6 +27,12 @@ p {
     margin: 0;
 }
 
+img {
+    display: block;
+    block-size: auto;
+    inline-size: 100%;
+}
+
 /* Header Layout */
 header {
     display: flex;
@@ -227,6 +233,14 @@ ul li a:hover {
     font-weight: bold;
 }
 
+.gallery-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(235px, 1fr));
+    gap: 1rem;
+
+}
+
+
 /* Responsive mobile styles */
 @media (max-width: 700px) {
     /* Stack header vertically, center logo */
@@ -298,5 +312,9 @@ ul li a:hover {
 
     ul li ul.dropdown li {
         padding: 0.3rem 0;
+    }
+
+    .gallery-wrapper {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     }
 }
